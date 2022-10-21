@@ -1,0 +1,42 @@
+.svg-icon {
+  align-items: center;
+  display: flex;
+  height: var(--icon-size, 40px);
+  justify-content: center;
+  position: relative;
+  width: var(--icon-size, 40px);
+}
+
+.svg-icon__svg {
+  height: var(--icon-size, 40px);
+  width: var(--icon-size, 40px);
+}
+
+
+/* Editor Preview Styles */
+.svg-icon-preview {
+  align-items: center;
+  display: flex;
+}
+
+.svg-icon-preview__icon {
+  align-items: center;
+  background-color: #0397ec;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  height: var(--icon-size, 40px);
+  justify-content: center;
+  width: var(--icon-size, 40px);
+}
+
+.svg-icon-preview__text {
+  margin-left: 8px;
+}
+
+.svg-icon-preview__text--smaller {
+  display: block;
+  font-size: 10px;
+}

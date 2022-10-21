@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="incentro.svguse.SvgUse" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Svg Use</name>
+    <description>Use SVG symbols defined within the environment</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="svgName" type="string" required="false">
+                <caption>SVG symbol name</caption>
+                <description>Reference to a SVG symbol in the project.</description>
+            </property>
+            <property key="svgSize" type="integer" defaultValue="40">
+                <caption>SVG size</caption>
+                <description>The size for square symbols.</description>
+            </property>
+            <property key="svgColorVar" type="string" required="false">
+                <caption>SVG color</caption>
+                <description>Add the color for the SVG symbol. This could also be a CSS variable name.</description>
+            </property>
+            <property key="buttonAction" type="action">
+                <caption>On click</caption>
+                <description>Action to be performed when SVG is clicked.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
