@@ -1,7 +1,10 @@
 import "./ui/SvgUse.css";
 import { createElement, useEffect, useState } from "react";
 
-export function SvgUse({ buttonAction, svgColorVar, svgName, svgSize }) {
+export function SvgUse({ buttonAction, svgColorVar, svgName, svgSize, ...rest }) {
+    const id = rest.id || "";
+    const style = rest.class || "";
+    const widgetName = rest.name || "";
     const [canRender, setCanRender] = useState(false);
 
     function onClick() {
@@ -17,9 +20,12 @@ export function SvgUse({ buttonAction, svgColorVar, svgName, svgSize }) {
     }, [svgName]);
 
     if (canRender) {
+        const interactiveClass = buttonAction ? "svg-icon--interactive" : "";
+
         return (
             <div
-                className="svg-icon"
+                id={id}
+                className={`svg-icon ${style} ${widgetName} ${interactiveClass}`}
                 onClick={() => buttonAction && onClick()}
                 style={{ "--icon-size": `${svgSize}px`, "--icon-color": `${svgColorVar}` }}
             >

@@ -7,6 +7,10 @@
   width: var(--icon-size, 40px);
 }
 
+.svg-icon--interactive:hover {
+  cursor: pointer;
+}
+
 .svg-icon__svg {
   height: var(--icon-size, 40px);
   width: var(--icon-size, 40px);
