@@ -1,7 +1,7 @@
 {
     "name": "svguse",
     "widgetName": "SvgUse",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Use SVG symbols defined within the environment",
     "copyright": "2022 Incentro",
     "author": "Rob Duits",
