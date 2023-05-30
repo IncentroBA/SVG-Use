@@ -16,21 +16,22 @@
     <properties>
         <propertyGroup caption="General">
             <property key="svgName" type="string" required="false">
-                <caption>SVG symbol name</caption>
+                <caption>Symbol name</caption>
                 <description>Reference to a SVG symbol in the project.</description>
             </property>
             <property key="svgSize" type="integer" defaultValue="40">
-                <caption>SVG size</caption>
+                <caption>Size</caption>
                 <description>The size for square symbols.</description>
             </property>
             <property key="svgColorVar" type="string" required="false">
-                <caption>SVG color</caption>
+                <caption>Color</caption>
                 <description>Add the color for the SVG symbol. This could also be a CSS variable name.</description>
             </property>
             <property key="buttonAction" type="action">
                 <caption>On click</caption>
                 <description>Action to be performed when SVG is clicked.</description>
             </property>
+            <systemProperty key="Visibility" />
         </propertyGroup>
     </properties>
 </widget>

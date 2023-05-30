@@ -19,7 +19,7 @@ export function SvgUse({ buttonAction, svgColorVar, svgName, svgSize, ...rest })
         }
     }, [svgName]);
 
-    if (canRender) {
+    if (canRender && (buttonAction ? buttonAction.isAuthorized : null)) {
         const interactiveClass = buttonAction ? "svg-icon--interactive" : "";
 
         return (
@@ -35,6 +35,6 @@ export function SvgUse({ buttonAction, svgColorVar, svgName, svgSize, ...rest })
             </div>
         );
     } else {
-        return <div></div>;
+        return null;
     }
 }
